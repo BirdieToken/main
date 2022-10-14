@@ -1,0 +1,44 @@
+div.nft {
+  position: absolute;
+  padding: 10px;
+  width: 260px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px #0000000d;
+  border-radius: 4px;
+  transform: rotate(-10deg);
+  cursor: pointer;
+
+  &.left {
+    transform: rotate(30deg);
+  }
+
+  div.image {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+  }
+
+  div.info {
+    margin-top: 10px;
+
+    p.name {
+      font-size: 17px;
+      font-weight: 500;
+    }
+
+    p.symbol {
+      font-size: 14px;
+      color: #00000070;
+    }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  div.nft {
+    position: absolute;
+    top: 60px;
+  }
+}

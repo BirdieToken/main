@@ -1,0 +1,57 @@
+div.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+
+  div.image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+  }
+
+  p.name {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  p.title {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  p.role {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 2px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  div.member {
+
+    div.image {
+      width: 100px;
+      height: 100px;
+    }
+
+    p.name {
+      font-size: 17px;
+    }
+
+    p.title {
+      font-size: 14px;
+    }
+
+    p.role {
+      font-size: 14px;
+    }
+  }
+}
