@@ -21,7 +21,7 @@ const Footer = () => {
           <li>Explore</li>
           <li>Home</li>
           <li>About</li>
-          <li>Roadmap</li>
+          <li onClick={() => open_link('/pdf/whitepaper.pdf')}>Whitepaper</li>
           <li>Team</li>
           <li>Join Us</li>
         </ul>

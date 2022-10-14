@@ -6,6 +6,8 @@ const Header = () => {
   const [menu, setMenu] = useState(false)
 
   const go_to = (path) => window.location.hash = path
+  
+  const load_url = (url) => window.open(url)
 
   useEffect(() => {
     setInnerWidth(window.innerWidth)
@@ -20,14 +22,12 @@ const Header = () => {
         <img src={'/logo2.png'} alt={'logo'} className={styles.text_logo} />
       </div>
 
-
-
       <div className={styles.menu}>
         {menu &&
           <ul>
             <li onClick={() => go_to('')}>Home</li>
             <li onClick={() => go_to('about')}>About</li>
-            <li onClick={() => go_to('roadmap')}>Roadmap</li>
+            <li onClick={() => load_url('/pdf/whitepaper.pdf')}>Whitepaper</li>
             <li onClick={() => go_to('team')}>Team</li>
             <li onClick={() => go_to('join')}>Join Us</li>
             {innerWidth < 710 && <li onClick={() => setMenu(false)}><i className='fa-solid fa-xmark'></i> Close</li>}
