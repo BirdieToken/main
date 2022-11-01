@@ -5,6 +5,7 @@ const Team = () => {
   return (
     <div className={styles.team}>
       <div className={styles.header}>
+        <i className='fa-solid fa-users-medical'></i>
         <p>Our Team</p>
       </div>
 
@@ -24,14 +25,20 @@ const Team = () => {
         <Member
           image={'/team/fiona.jpg'}
           name={'Fiona H. (US)'}
-          title={'Community Manager'}
-          role={'Human Resources Specialist'} />
+          title={'GFX Team'}
+          role={'NFT Artist'} />
 
         <Member
           image={'/team/nick.jpg'}
           name={'Nick'}
           title={'CTO'}
           role={'Tech/Web3 Advisor'} />
+
+        <Member
+          image={'/team/depressivehacks.jpg'}
+          name={'DepressiveHacks'}
+          title={'Community Manager'}
+          role={'Human Resources'} />
       </div>
     </div>
   )

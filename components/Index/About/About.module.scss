@@ -1,0 +1,142 @@
+div.about {
+  position: relative;
+  margin-block: 200px;
+
+  div.top_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    div.head {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+
+      p {
+        color: #334470;
+        font-size: 26px;
+        font-weight: 600;
+        font-family: 'Good Times';
+      }
+    }
+
+    p.motto {
+      font-weight: 500;
+      color: #212121;
+    }
+  }
+
+  div.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    div.section {
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px 40px;
+      margin: 10px;
+      background-color: #ffffff;
+      border: 1px solid #e8e8e8;
+      border-radius: 20px;
+      box-shadow: 0 0 6px #e8e8e8;
+
+      div.header {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        width: 100%;
+        padding-block: 5px;
+        margin-bottom: 10px;
+
+        i {
+          font-size: 20px;
+        }
+
+        p {
+          font-weight: 500;
+          font-size: 16px;
+          margin-left: 18px;
+          font-family: 'Good Times';
+        }
+      }
+
+      p.text {
+        text-align: left;
+        line-height: 30px;
+        display: inline;
+        z-index: 1;
+      }
+
+      img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 140px;
+      }
+    }
+  }
+
+  div.centered {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 50px 120px;
+
+    button {
+      background-color: #334570;
+      border: 0;
+      border-radius: 6px;
+      font-size: 12px;
+      font-family: 'Good Times';
+      letter-spacing: 1px;
+      padding: 12px 16px;
+      color: #ffffff;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    img {
+      position: absolute;
+      top: 30px;
+      width: 400px;
+    }
+  }
+}
+
+@media screen and (max-width: 710px) {
+  div.about {
+
+    div.top_header {
+
+      div.head {
+
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+
+    div.grid {
+      grid-template-columns: repeat(1, 1fr);
+
+      div.section {
+
+        &:nth-of-type(1) {
+          padding-bottom: 90px;
+        }
+      }
+    }
+
+    div.centered {
+      padding: 25px 18px;
+    }
+  }
+}

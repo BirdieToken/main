@@ -1,4 +1,10 @@
 @font-face {
+  font-family: 'Good Times';
+  font-weight: 400;
+  src: url(/fonts/GoodTimes.otf);
+}
+
+@font-face {
   font-family: 'Cera Pro';
   font-weight: 400;
   src: url(/fonts/CeraProRegular.otf);

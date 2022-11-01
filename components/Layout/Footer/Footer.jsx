@@ -1,7 +1,7 @@
 import styles from './Footer.module.scss'
 
 const Footer = () => {
-  const go_to = () => window.location.hash = 'main'
+  const go_to = (path) => window.location.hash = path
   const open_link = (url) => window.open(url)
 
   return (
@@ -19,11 +19,11 @@ const Footer = () => {
 
         <ul className={styles.navigation}>
           <li>Explore</li>
-          <li>Home</li>
-          <li>About</li>
+          <li onClick={() => go_to('main')}>Home</li>
+          <li onClick={() => go_to('about')}>About</li>
           <li onClick={() => open_link('/pdf/whitepaper.pdf')}>Whitepaper</li>
-          <li>Team</li>
-          <li>Join Us</li>
+          <li onClick={() => go_to('team')}>Team</li>
+          <li onClick={() => open_link('https://linktr.ee/birdiegolfllc')}>Linktree</li>
         </ul>
 
         <ul className={styles.navigation}>
@@ -40,7 +40,7 @@ const Footer = () => {
       </div>
 
       <div className={styles.back_to_top}>
-        <button onClick={() => go_to()}>
+        <button onClick={() => go_to('main')}>
           Back to top
 
           <div className={styles.icon}>

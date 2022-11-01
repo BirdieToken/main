@@ -1,0 +1,150 @@
+div.roadmap {
+  display: flex;
+  flex-direction: column;
+
+  div.top_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+    div.head {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+
+      p {
+        color: #334470;
+        font-size: 26px;
+        font-weight: 600;
+        font-family: 'Good Times';
+      }
+    }
+
+    p.motto {
+      font-weight: 500;
+      color: #212121;
+    }
+  }
+
+  div.grid {
+
+    div.section {
+      position: relative;
+      display: grid;
+      grid-template-columns: 48% 4% 48%;
+
+      &:nth-last-of-type(even) {
+        text-align: right;
+
+        ul {
+          margin-left: auto;
+        }
+      }
+
+      div.line {
+        position: relative;
+        width: 10%;
+        height: 100%;
+        margin: auto;
+        background-color: #ffffff;
+
+        div.dot {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 20px;
+          height: 20px;
+          margin-left: -7.5px;
+          background-color: #7fb543;
+          box-shadow: 0 0 6px 3px #bcf080;
+          border-radius: 50%;
+          border: 2px solid #ffffff;
+        }
+      }
+
+      div.mobile_dot {
+        display: none;
+      }
+
+      ul {
+        width: fit-content;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    width: fit-content;
+    height: fit-content;
+    margin-block: 20px;
+    padding-block: 15px;
+    padding-inline: 20px 40px;
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 15px;
+    box-shadow: 0 0 6px #e8e8e8;
+
+    li {
+      font-size: 15px;
+      line-height: 30px;
+
+      &:nth-of-type(1) {
+        font-family: 'Good Times';
+        margin-bottom: 2px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 710px) {
+  div.roadmap {
+
+    div.top_header {
+
+      div.head {
+
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+
+    div.grid {
+
+      div.section {
+        display: block;
+
+        div.empty,
+        div.line {
+          display: none;
+        }
+
+        div.mobile_dot {
+          display: block;
+          position: absolute;
+          top: -10px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 20px;
+          height: 20px;
+          background-color: #7fb543;
+          box-shadow: 0 0 6px 3px #bcf080;
+          border-radius: 50%;
+          border: 2px solid #ffffff;
+          z-index: 10;
+        }
+
+        ul {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

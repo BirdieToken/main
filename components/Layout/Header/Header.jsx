@@ -29,7 +29,7 @@ const Header = () => {
             <li onClick={() => go_to('about')}>About</li>
             <li onClick={() => load_url('/pdf/whitepaper.pdf')}>Whitepaper</li>
             <li onClick={() => go_to('team')}>Team</li>
-            <li onClick={() => go_to('join')}>Join Us</li>
+            <li onClick={() => load_url('https://linktr.ee/birdiegolfllc')}>Linktree</li>
             {innerWidth < 710 && <li onClick={() => setMenu(false)}><i className='fa-solid fa-xmark'></i> Close</li>}
           </ul>}
 
