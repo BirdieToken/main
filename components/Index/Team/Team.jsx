@@ -20,7 +20,7 @@ const Team = () => {
           image={'/team/sky.jpeg'}
           name={'Sky W. (UK)'}
           title={'Merchandising & Promotion'}
-          role={'Merchandising'} />
+          role={''} />
 
         <Member
           image={'/team/fiona.jpg'}

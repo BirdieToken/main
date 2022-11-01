@@ -42,7 +42,7 @@ const Main = () => {
 
         <button
           onClick={() => load_url('https://opensea.io/collection/the-titus-collection')}>
-          Let's Explore
+          Mint Titus Here!
         </button>
       </div>
     </div>
