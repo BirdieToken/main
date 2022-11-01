@@ -41,7 +41,7 @@ const Main = () => {
           left={false} />
 
         <button
-          onClick={() => load_url('https://opensea.io/collection/the-titus-collection')}>
+          onClick={() => load_url('https://titus.web3birdie.io/')}>
           Mint Titus Here!
         </button>
       </div>
