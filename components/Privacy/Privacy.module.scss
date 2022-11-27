@@ -1,0 +1,21 @@
+div.privacy {
+  position: relative;
+  margin-bottom: 200px;
+  width: 100%;
+
+  div.section {
+    margin-block: 20px 50px;
+
+    p.header {
+      font-family: 'Good Times';
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p.text {
+      text-align: center;
+      font-size: 17px;
+    }
+  }
+}
