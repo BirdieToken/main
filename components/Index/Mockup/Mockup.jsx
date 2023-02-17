@@ -18,7 +18,7 @@ const Mockup = () => {
           left={false} />
 
         <button
-          onClick={() => load_url('https://underparlifestyle.myshopify.com/')}>
+          onClick={() => open_link('https://underparlifestyle.myshopify.com/')}>
           Store
         </button>
       </div>

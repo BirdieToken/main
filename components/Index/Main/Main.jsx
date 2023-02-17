@@ -21,6 +21,12 @@ const Main = () => {
             onClick={() => go_to('about')}>
             Let's Explore
           </button>
+
+          <button
+            className={styles.wallet_btn}
+            onClick={() => load_url('https://underparlifestyle.myshopify.com/')}>
+            Store
+          </button>
         </div>
       </div>
 
