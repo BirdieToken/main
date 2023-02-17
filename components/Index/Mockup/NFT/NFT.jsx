@@ -1,11 +1,11 @@
 import styles from './NFT.module.scss'
 
 const NFT = ({ image, left, title }) => {
-  const open_opensea = () => window.open('https://opensea.io/collection/the-titus-collection')
+  const open_link = () => window.open('https://underparlifestyle.myshopify.com/')
 
   return (
     <div 
-      onClick={() => open_opensea()}
+      onClick={() => open_link()}
       className={`${styles.nft} ${left && styles.left}`}>
       <div className={styles.image} style={{ backgroundImage: `url(${image})` }}></div>
       <div className={styles.info}>
