@@ -15,7 +15,7 @@ export default function Home() {
 
       <About />
 
-      <Roadmap />
+      {/* <Roadmap /> */}
 
       <Mockup />
 

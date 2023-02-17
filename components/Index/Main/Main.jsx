@@ -21,13 +21,6 @@ const Main = () => {
             onClick={() => go_to('about')}>
             Let's Explore
           </button>
-
-          <button
-            className={styles.wallet_btn}
-            onClick={() => go_to('download')}>
-            {/* <i className='fa-solid fa-mobile-screen-button'></i> */}
-            Birdie Wallet
-          </button>
         </div>
       </div>
 

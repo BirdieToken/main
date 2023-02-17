@@ -1,75 +1,97 @@
 div.mockup {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  margin-block: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 66px);
   width: 100%;
 
-  div.bg {
+  div.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-inline: 30px;
+    width: 50%;
+
+    p.motto {
+      font-family: 'Good Times';
+      font-size: 40px;
+    }
+
+    p.text {
+      font-size: 17px;
+      font-weight: 400;
+      margin-block: 30px;
+      margin-left: 2px;
+    }
+  }
+
+  div.right {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 50%;
+    margin-bottom: 100px;
 
-    img {
-      width: 100%;
+    button {
+      position: absolute;
+      bottom: 50px;      
+      background-color: #000000;
+      border: 0;
+      border-radius: 6px;
+      font-size: 11px;
+      font-family: 'Good Times';
+      letter-spacing: 1px;
+      padding: 12px 16px;
+      color: #ffffff;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: 0.2s ease;
     }
   }
+}
 
-  div.left_container {
-    display: flex;
+@media screen and (max-width: 810px) {
+  div.mockup {
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    margin: 30px 20px;
+    margin-block: 30px;
 
-    img.text {
-      width: 100%;
-      margin-left: -10px;
-      margin-bottom: 20px;
-    }
+    div.left {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      height: 50%;
+      margin-top: 100px;
 
-    p.description {
-      font-size: 20px;
-    }
+      p.motto {
+        font-size: 30px;
+        line-height: 0px;
+      }
+  
+      p.text {
+        font-size: 15px;
+        margin-block: 30px;
+      }
 
-    div.btns {
-
-      img {
-        cursor: pointer;
-        transition: 0.2s ease;
-
-        &:active {
-          transform: scale(0.98);
-        }
-
-        &:nth-child(1) {
-          width: 200px;
-          margin-left: -40px;
-        }
-
-        &:nth-child(2) {
-          width: 150px;
-          margin-bottom: 9px;
-          margin-left: -20px;
-        }
+      button {
+        width: 150px;
+        height: 40px;
+        margin: 10px;
+        font-size: 10px !important;
       }
     }
-  }
-}
 
-@media screen and (max-width: 1100px) {
-  div.mockup {
-    grid-template-columns: 50% 50%;
-  }
-}
+    div.right {
+      position: relative;
+      width: 90%;
+      height: 50%;
 
-@media screen and (max-width: 710px) {
-  div.mockup {
-    display: block;
-    margin-block: 100px;
-
-    div.left_container {
-
-      p.description {
-        font-size: 15px;
+      button {
+        bottom: -250px;
       }
     }
   }

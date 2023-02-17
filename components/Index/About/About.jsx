@@ -23,9 +23,11 @@ const About = () => {
             <p>Web3 & Golf</p>
           </div>
 
-          <p className={styles.text}>The ambition behind Birdie Golf LLC is to bring the powers of Web3 to the game of golf to grow both industries. Our goal is to bring these
-            two together with easy-to-use products like our Birdie Wallet, Birdie Token
-            and Titus NFT's to unlock the wonders of Web3 into real life utility through the game of golf.</p>
+          <p className={styles.text}>The ambition behind Birdie Golf LLC is to bring 
+            the powers of Web3 to the game of golf to grow both industries. 
+            Our goal is to bring these two together with easy-to-use products 
+            Titus NFT's and #UnderParLifeStyle apparel line to unlock the wonders of 
+            Web3 into real life utility through the game of golf.</p>
 
           <img src='/graphics/birdie.png' />
         </div>
@@ -36,12 +38,11 @@ const About = () => {
             <p>Advanced Utility</p>
           </div>
 
-          <p className={styles.text}>Due to the continuous and rapid growth of the Web3 technologies it's hard for
-            some to understand and keep up with this new financial reality that can be
-            beneficial over traditional finance options. We aim to combine the world of
-            Web3 through its many utility-based products such as the Birdie Wallet,
-            Birdie Token and NFTs as well as give golf enthusiasts everything they need
-            to jump into the Web3 world.</p>
+          <p className={styles.text}>Due to the continuous and rapid growth of the 
+            Web3 technologies it's hard for some to understand and keep up with 
+            this new financial reality that can be beneficial over traditional 
+            options. We aim to combine the world of Web3 through its many 
+            utility-based products and services with the use of Blockchain.</p>
         </div>
       </div>
 

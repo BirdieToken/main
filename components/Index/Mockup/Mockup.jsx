@@ -1,29 +1,31 @@
 import styles from './Mockup.module.scss'
+import NFT from './NFT/NFT'
 
 const Mockup = () => {
   const open_link = (url) => window.open(url)
 
   return (
     <div className={styles.mockup} id='download'>
-      <div className={styles.left_container}>
-        <img 
-          src={'/graphics/download.png'}
-          className={styles.text} />
-        <p className={styles.description}>Install Birdie Wallet and get instant access to all of our dApps in an instant!</p>
+      <div className={styles.right}>
+        <NFT
+          image={'/store/store2.jpg'}
+          title={'Hi Vis Hat/Polo Combo Set'}
+          left={true} />
 
-        <div className={styles.btns}>
-          <img
-            src={'/graphics/apple.png'}
-            onClick={() => open_link('https://apps.apple.com/us/app/birdie-wallet/id1612981639')} />
+        <NFT
+          image={'/store/store1.jpg'}
+          title={'Birdie Hi-Vis Flat Bills'}
+          left={false} />
 
-          <img
-            src={'/graphics/google.png'}
-            onClick={() => open_link('https://play.google.com/store/apps/details?id=com.birdiewallet.birdie&hl=en&gl=US')} />
-        </div>
+        <button
+          onClick={() => load_url('https://underparlifestyle.myshopify.com/')}>
+          Store
+        </button>
       </div>
 
-      <div className={styles.bg}>
-        <img src={'/graphics/mockup.png'} />
+      <div className={styles.left}>
+        <p className={styles.motto}>Web3 Pro Shop</p>
+        <p className={styles.text}>More on brand for golf ⛳️</p>
       </div>
     </div>
   )

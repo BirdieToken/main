@@ -26,6 +26,7 @@ const Header = () => {
         {menu &&
           <ul>
             <li onClick={() => go_to('')}>Home</li>
+            <li onClick={() => load_url('https://underparlifestyle.myshopify.com/')}>Store</li>
             <li onClick={() => go_to('about')}>About</li>
             <li onClick={() => load_url('/pdf/whitepaper.pdf')}>Whitepaper</li>
             <li onClick={() => go_to('team')}>Team</li>

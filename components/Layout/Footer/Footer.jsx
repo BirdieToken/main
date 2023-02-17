@@ -28,8 +28,8 @@ const Footer = () => {
 
         <ul className={styles.navigation}>
           <li>dApps</li>
-          <li>Titus Collection Mint</li>
-          {/* <li></li> */}
+          <li onClick={() => open_link('https://titus.web3birdie.io/')}>Titus Collection Mint</li>
+          <li onClick={() => open_link('https://underparlifestyle.myshopify.com/')}>Store</li>
         </ul>
       </div>
 
