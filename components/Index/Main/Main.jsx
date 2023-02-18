@@ -13,7 +13,7 @@ const Main = () => {
         <img
           src={'/graphics/motto.png'}
           className={styles.motto} />
-        <p className={styles.text}>Birdie Golf LLC. is a Web3 solutions company aiming to reduce the complexity of blockchain technology.  With products like the Birdie Wallet and Titus NFT, this will give our holders instant access into both the world of golf and decentralized finance!</p>
+        <p className={styles.text}>Birdie Golf LLC. is a Web3 solutions company aiming to reduce the complexity of blockchain technology. With products like the #UnderParLifeStyle apparel line and Titus NFT, this will give our holders instant access into both the world of golf and decentralized finance!</p>
 
 
         <div className={styles.buttons}>
